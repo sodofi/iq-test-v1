@@ -1,0 +1,13 @@
+{
+  "name": "IQ Test",
+  "description": "Test your IQ and get instant results with CELO payment",
+  "version": "1.0.0",
+  "capabilities": {
+    "wallet": {
+      "chains": ["celo"]
+    }
+  },
+  "icons": {
+    "192x192": "/icon-192.png"
+  }
+} 
