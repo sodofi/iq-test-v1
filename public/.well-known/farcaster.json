@@ -1,7 +1,17 @@
 {
   "name": "IQ Test",
   "description": "Test your IQ and get instant results with CELO payment",
-  "version": "1.0.0",
+  "version": "1",
+  "frame": {
+    "version": "1",
+    "name": "IQ Test",
+    "homeUrl": "https://iq-test-v1.vercel.app",
+    "iconUrl": "https://iq-test-v1.vercel.app/icon.png",
+    "imageUrl": "https://iq-test-v1.vercel.app/image.png",
+    "buttonTitle": "Start IQ Test",
+    "splashImageUrl": "https://iq-test-v1.vercel.app/icon.png",
+    "splashBackgroundColor": "#4F46E5"
+  },
   "frames": {
     "recommended_frame_height": "tall"
   },
