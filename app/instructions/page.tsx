@@ -33,7 +33,7 @@ export default function Instructions() {
               <CheckCircle className="h-5 w-5 text-purple-500 mt-0.5 flex-shrink-0" />
               <div className="text-sm">
                 <p className="font-medium">Answer in order</p>
-                <p className="text-gray-600">Can't go back to previous questions</p>
+                <p className="text-gray-600">Can&apos;t go back to previous questions</p>
               </div>
             </div>
 

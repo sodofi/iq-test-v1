@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -26,6 +26,13 @@ export default function Quiz() {
     return `${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`
   }
 
+  const handleQuizCompletion = useCallback(() => {
+    // Store answers in localStorage for results page
+    localStorage.setItem("userAnswers", JSON.stringify(userAnswers))
+    localStorage.setItem("timeSpent", JSON.stringify(15 * 60 - timeLeft))
+    router.push("/results")
+  }, [userAnswers, timeLeft, router])
+
   // Timer effect
   useEffect(() => {
     const timer = setInterval(() => {
@@ -47,14 +54,7 @@ export default function Quiz() {
     }, 1000)
 
     return () => clearInterval(timer)
-  }, [])
-
-  const handleQuizCompletion = () => {
-    // Store answers in localStorage for results page
-    localStorage.setItem("userAnswers", JSON.stringify(userAnswers))
-    localStorage.setItem("timeSpent", JSON.stringify(15 * 60 - timeLeft))
-    router.push("/results")
-  }
+  }, [handleQuizCompletion])
 
   const handleNextQuestion = () => {
     // Save the current answer
