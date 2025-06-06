@@ -1,4 +1,9 @@
 {
+  "accountAssociation": {
+    "header": "eyJmaWQiOjEwNjEwLCJ0eXBlIjoiY3VzdG9keSIsImtleSI6IjB4NjAwYzAyNTExZDFCNjc5NDZjMjA2RWIyMjNDODIzNjBGRGRiYjgxOCJ9",
+    "payload": "eyJkb21haW4iOiJpcS10ZXN0LXYxLnZlcmNlbC5hcHAifQ",
+    "signature": "MHhkMTZjZDY2YjZhYzBhY2IwNGJhNmI1ZjExMmRjOGVjY2ZjMjdkZDVlMWJhZWY1Y2NkM2ZlYzczODRlZGZjMTk3NjJmZjkwZWVmMmM4ZGNlNjk3NGEyNjk5YTY2YTQwNWJhYWM3ZGI0YTA0NDQ0NjlmM2Y1ZDYwNDA1ZmNhYWIyYjFj"
+  },
   "name": "IQ Test",
   "description": "Test your IQ and get instant results with CELO payment",
   "version": "1",
